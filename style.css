@@ -1,0 +1,369 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);  /* center header from its own width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    color: white;
+    padding: 0.2rem 1.5rem;
+    border-radius: 3rem;
+    z-index: 1000;
+}
+
+.logo{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-wrap: nowrap; /* 2 words so it will not wrap*/
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    color: #F7C5CC;
+}
+.nav-links{
+    display:flex;
+    gap: 2rem;
+    list-style: none;
+}
+li a{
+    position: realtive; /**/
+    color: white;
+    font-weight: 300;
+    transition: 0.4s ease-in-out;
+}
+li a:hover{
+    transform: scale(1.1);
+    color: rgb(190, 196, 185);
+}
+
+
+.visit-btn{
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(80, 72, 72);
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+}
+.visit-btn:hover{
+    transform: scale(1.1);
+    color: magenta;
+}
+
+#menu-icon{
+    font-size: 2rem;
+    display: none;
+}
+
+
+/* about section */
+
+section{
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10rem
+}
+.about img{
+    width:30vw;
+    border-radius: 50%;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.info-box h2{
+    font-size: 1.5rem;
+    font-weight:500;
+    opacity: 0.8;
+}
+
+.info-box h1{
+    font-size: 3rem;
+    font-weight:600;
+    text-wrap: nowrap;
+}
+
+.info-box span{
+    color: lightcoral;
+}
+.btn-group{
+    display: flex;
+    gap: 1rem;
+}
+.btn{
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid black;
+    cursor:pointer;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.2s ease-in-out;
+}
+.btn:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+.socials{
+    display: flex;
+    gap: 2rem;
+}
+.socials i{
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.socials i:hover{
+    transform: scale(1.1);
+}
+
+
+/* Experience page */
+
+
+#experience {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.experience-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-text {
+    font-size: 1.2rem;
+    opacity: 0.6;
+    margin: 0;
+}
+
+.title-experience {
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.section-layout {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+}
+
+.section-para {
+    font-size: 2.1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+article i {
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    gap:2rem;
+}
+
+article i:hover{
+    transform: scale(1.1);
+    color: #FF7518;
+}
+
+article h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+/* projects */
+
+#projects{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:3rem;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+}
+
+.project-card{
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.project-card:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-10px)scale(1.02);
+}
+.project-card img{
+    width: 20vw;
+    border-radius: 1rem;
+}
+.project-card:hover .btn{
+    border: 2px solid white;
+}
+
+.project-card:hover .btn:hover{
+    border: 2px solid rgb(169, 49, 49);
+    background-color: white;
+    color: black;
+}
+.project-card h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+/* contact  */
+
+.section-titlerec{
+    font-size: 2.5rem;
+    text-wrap: nowrap;
+}
+
+.section-titlecon{
+    font-size: 2.5rem;
+    text-wrap: nowrap;
+}
+
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.input-box input {
+    border-radius: 3rem;
+    border: 2px solid black;
+    padding: 1.4rem 6rem;
+    font-size: 1.1rem;
+}
+
+.input {
+    position: relative;
+}
+
+.input i {
+    position: absolute;
+    font-size: 2rem; /* Adjusted to fit within the input */
+    top: 50%;
+    left: 28px;
+    transform: translate(0, -50%);
+}
+
+footer {
+    position: relative; /* Corrected positioning */
+    bottom: 0;
+    left: 0;
+    height: 10rem;
+    width: 100vw; /* Changed width to cover full viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    background-color: #333;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+footer ul li a {
+    color: black;
+    font-weight: 600;
+}
+
+.copyright {
+    font-size: 1rem; /* Corrected font size */
+    margin-top: 2rem;
+}
+
+
+
